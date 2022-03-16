@@ -509,3 +509,81 @@ body {
   letter-spacing: 2px;
   color: #252525;
 }
+
+.team {
+  margin-top: 174px;
+  padding: 0 310px 167px 315px;
+}
+
+.team__title {
+  font-size: 48px;
+  line-height: 71px;
+  font-family: "Oswald-Bold", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 3.072px;
+  color: #252525;
+}
+
+.team__list {
+  margin-top: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__fig {
+  position: relative;
+}
+
+.team__para {
+  display: none;
+}
+
+.team__para--hover {
+  margin-top: 17px;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: none;
+  font-family: "Oswald-Light", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 1.152px;
+  color: #252525;
+}
+
+.team__para--sign {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 25px;
+  text-transform: none;
+  font-family: "OpenSans-Regular", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 1.008px;
+  color: #777777;
+}
+
+.team__capture {
+  width: 100%;
+  padding: 13px 0 15px;
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald-Light", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 1.152px;
+  color: #252525;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.team__capture:hover {
+  padding: 19px 0 30px;
+  background: #ffffff;
+  opacity: 0.92;
+}
+
+.team__capture:hover .team__para {
+  display: block;
+}
