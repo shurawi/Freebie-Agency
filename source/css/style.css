@@ -664,3 +664,43 @@ body {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback__item {
+  width: 50%;
+  padding: 123px 0 100px;
+  text-align: center;
+}
+
+.feedback__item--work {
+  background: url("../img/icon-brief.svg") center 69px no-repeat, #fbfbfb;
+}
+
+.feedback__item--contact {
+  background: url("../img/icon-mail.svg") center 72px no-repeat, #70bd59;
+}
+
+.feedback__title {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Oswald-Regular", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 2.66667px;
+  color: #373737;
+}
+
+.feedback__para {
+  padding-top: 22px;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "OpenSans-Light", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 1.55556px;
+  color: #373737;
+}
