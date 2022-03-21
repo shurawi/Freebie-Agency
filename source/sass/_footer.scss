@@ -1,0 +1,61 @@
+.footer__info {
+	padding: 83px 712px 0 708px;
+	background: #2e2e2e;
+	text-align: center;
+}
+
+.footer__logo {
+	display: inline-block;
+	width: 132px;
+	height: 45px;
+}
+
+.footer__address {
+	margin-top: 16px;
+	font-size: 13px;
+	line-height: 19px;
+	font-style: normal;
+	font-family: "Oswald-Light", "Arial", "Helvetica", sans-serif;
+	letter-spacing: 0.832px;
+	color: #ffffff;
+}
+
+.footer__contacts {
+	margin-top: 10px;
+}
+
+.footer__para {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 19px;
+	font-style: normal;
+	font-family: "Oswald-Light", "Arial", "Helvetica", sans-serif;
+	letter-spacing: 0.832px;
+	color: #ffffff;
+}
+
+.footer__social {
+	display: flex;
+	margin-top: 39px;
+	padding-bottom: 82px;
+	justify-content: center;
+}
+
+.footer__link {
+	margin-right: 21px;
+	font-size: 0px;
+	line-height: 0px;
+	text-decoration: none;
+	color: #252525;
+}
+
+.footer__img {
+	width: 32px;
+	height: 32px;
+}
+
+.footer__text {
+	padding: 21px 0 20px;
+	text-align: center;
+	background: #252525;
+}
