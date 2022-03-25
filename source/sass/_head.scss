@@ -23,12 +23,34 @@
 
 .head__item {
 	margin-right: 58px;
+	padding-left: 5px;
+}
+
+.head__link {
+	position: relative;
+	display: block;
+	padding-left: 2px;
 	font-size: 14px;
 	line-height: 27px;
 	text-transform: uppercase;
 	letter-spacing: 1.94px;
 	font-family: "Oswald-Regular", "Arial", "Helvetica", sans-serif;
 	color: #ffffff;
+
+	&::before {
+		content: "";
+		width: 18px;
+		height: 2px;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		background: #4caf50;
+		transition: 0.5s;
+	}
+
+	&:hover::before {
+		width: 100%;
+	}
 }
 
 .head__text {
@@ -70,7 +92,18 @@
 	background-color: rgba(0, 0, 0, 0);
 
 	&--active {
+		position: relative;
 		padding-bottom: 9px;
 		font-size: 36px;
+
+		&::before {
+			content: "";
+			width: calc(100% + 2px);
+			height: 2px;
+			position: absolute;
+			top: calc(50% - 5px);
+			left: -2px;
+			background: #4caf50;
+		}
 	}
 }

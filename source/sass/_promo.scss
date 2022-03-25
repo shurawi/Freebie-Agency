@@ -20,6 +20,7 @@
 }
 
 .promo__para {
+	position: relative;
 	width: 311px;
 	margin: 32px 0 0 21px;
 	padding-left: 30px;
@@ -27,14 +28,18 @@
 	line-height: 25px;
 	letter-spacing: 1.26px;
 	font-family: "OpenSans-Light", "Arial", "Helvetica", sans-serif;
-}
 
-.promo__aside {
-	width: 311px;
-	margin: 110px 0 0 871px;
-	padding-left: 30px;
-	font-size: 15px;
-	line-height: 25px;
-	letter-spacing: 1.26px;
-	font-family: "OpenSans-Light", "Arial", "Helvetica", sans-serif;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 14px;
+		left: 0;
+		width: 20px;
+		height: 2px;
+		background: #353535;
+	}
+
+	&--aside {
+		margin: 110px 0 0 871px;
+	}
 }

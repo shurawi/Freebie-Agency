@@ -17,11 +17,22 @@
 }
 
 .works__title {
+	position: relative;
 	font-size: 48px;
 	line-height: 71px;
 	font-family: "Oswald-Bold", "Arial", "Helvetica", sans-serif;
 	letter-spacing: 3.072px;
 	color: #252525;
+
+	&::before {
+		content: "";
+		width: 45px;
+		height: 2px;
+		position: absolute;
+		bottom: -7px;
+		left: 0;
+		background: #252525;
+	}
 }
 
 .works__nav {
@@ -45,7 +56,11 @@
 	line-height: 18px;
 	font-family: "OpenSans-SemiBold", "Arial", "Helvetica", sans-serif;
 	letter-spacing: 0.832px;
-	color: #252525;
+	color: rgba(37, 37, 37, 0.3);
+
+	&--active {
+		color: #252525;
+	}
 }
 .works__photo {
 	width: 583px;
@@ -93,6 +108,12 @@
 			text-align: right;
 		}
 
+		.works__ref--inside {
+			display: block;
+			margin-right: 125px;
+			text-align: right;
+		}
+
 		.works__img {
 			display: block;
 			margin-right: 0;
@@ -115,15 +136,30 @@
 			margin-right: 128px;
 			margin-left: 174px;
 		}
+
+		.works__ref--inside {
+			margin-left: 174px;
+		}
+	}
+
+	&:hover {
+		.works__headline {
+			text-decoration: line-through;
+			text-decoration-color: rgba(112, 191, 115, 1);
+		}
 	}
 }
 
 .works__headline {
 	font-size: 48px;
 	line-height: 71px;
+	text-decoration-color: #70bf73;
 	font-family: "Oswald-Light", "Arial", "Helvetica", sans-serif;
 	letter-spacing: 3.072px;
 	color: #252525;
+	text-decoration: line-through;
+	text-decoration-color: rgba(112, 191, 115, 0);
+	transition: 0.5s;
 }
 
 .works__caption {
@@ -155,4 +191,17 @@
 	text-decoration: none;
 	letter-spacing: 2px;
 	color: #252525;
+
+	&--inside {
+		margin-top: 20px;
+		text-decoration: line-through;
+		text-decoration-color: rgba(112, 191, 115, 0);
+		font-family: "OpenSans-Regular", "Arial", "Helvetica", sans-serif;
+		transition: 0.5s;
+
+		&:hover {
+			text-decoration: line-through;
+			text-decoration-color: rgba(112, 191, 115, 1);
+		}
+	}
 }

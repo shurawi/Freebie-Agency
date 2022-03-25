@@ -59,11 +59,22 @@
 	background: #ffffff;
 	mix-blend-mode: normal;
 	opacity: 0.5;
+	transition: 0.5s;
 
 	&:hover {
 		padding: 19px 0 30px;
 		background: #ffffff;
 		opacity: 0.92;
+
+		&::before {
+			content: "";
+			width: 45px;
+			height: 2px;
+			position: absolute;
+			bottom: 100px;
+			left: calc(50% - 22.5px);
+			background: rgba(37, 37, 37, 1);
+		}
 
 		.team__para {
 			display: block;
